@@ -111,6 +111,9 @@ var vuePhotoPreview ={
 							} else {
 								return item.initialZoomLevel < 0.7 ? 1 : 1.5;
 							}
+						},
+						isClickableElement: function(el) {
+						    return el.tagName === 'A' || el.tagName === 'IMG';
 						}
 
 					};
